@@ -1,12 +1,12 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { ApiBody, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { DatabasesService } from './databases.service';
+import { DatabasesQueryDto } from './dto';
 import {
-  DatabasesQueryResultSuccess,
   DatabasesRetrieveResultSuccess,
   ResultError,
-} from '@/entities';
-import { DatabasesQueryDto } from './dto';
+  DatabasesQueryResultSuccess,
+} from '../../entities';
 
 @ApiTags('Databases')
 @Controller('databases')

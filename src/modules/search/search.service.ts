@@ -1,7 +1,7 @@
-import { ResultError, SearchResultSuccess } from '@/entities';
-import { NotionClientError } from '@/type';
 import { Injectable } from '@nestjs/common';
 import { Client } from '@notionhq/client';
+import { ResultError, SearchResultSuccess } from '../../entities';
+import { NotionClientError } from '../../type';
 
 @Injectable()
 export class SearchService {

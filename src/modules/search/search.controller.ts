@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { SearchService } from './search.service';
-import { ResultError, SearchResultSuccess } from '@/entities';
+import { SearchResultSuccess, ResultError } from '../../entities';
 
 @ApiTags('Search')
 @Controller('search')

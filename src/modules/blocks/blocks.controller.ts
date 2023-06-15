@@ -5,7 +5,7 @@ import {
   BlocksChildrenResultSuccess,
   BlocksRetrieveResultSuccess,
   ResultError,
-} from '@/entities';
+} from '../../entities';
 
 @ApiTags('Blocks')
 @Controller('blocks')

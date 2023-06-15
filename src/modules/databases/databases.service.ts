@@ -1,12 +1,12 @@
-import {
-  DatabasesQueryResultSuccess,
-  DatabasesRetrieveResultSuccess,
-  ResultError,
-} from '@/entities';
-import { NotionClientError } from '@/type';
 import { Injectable } from '@nestjs/common';
 import { Client } from '@notionhq/client';
 import { DatabasesQueryDto } from './dto';
+import {
+  DatabasesRetrieveResultSuccess,
+  ResultError,
+  DatabasesQueryResultSuccess,
+} from '../../entities';
+import { NotionClientError } from '../../type';
 
 @Injectable()
 export class DatabasesService {

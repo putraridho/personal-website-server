@@ -1,17 +1,17 @@
-import {
-  BlocksChildrenResultSuccess,
-  BlocksRetrieveResultSuccess,
-  ResultError,
-} from '@/entities';
-import { NotionClientError } from '@/type';
 import { Injectable } from '@nestjs/common';
 import { Client, isFullBlock } from '@notionhq/client';
-import { BlocksChildrenDto, BlocksRetrieveDto } from './dto';
 import {
   BlockObjectResponse,
   ChildPageBlockObjectResponse,
   PageObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
+import {
+  BlocksChildrenResultSuccess,
+  BlocksRetrieveResultSuccess,
+  ResultError,
+} from '../../entities';
+import { NotionClientError } from '../../type';
+import { BlocksChildrenDto, BlocksRetrieveDto } from './dto';
 
 @Injectable()
 export class BlocksService {
