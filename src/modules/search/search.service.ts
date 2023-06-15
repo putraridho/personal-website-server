@@ -26,16 +26,14 @@ export class SearchService {
       };
     } catch (err) {
       if (err instanceof NotionClientError) {
-        // Handle specific error types with custom messages
         return {
           success: false,
-          message: 'An error occurred while communicating with the Notion API.',
+          message: `Notion client error: ${err.message}`,
         };
       } else {
-        // Handle other types of errors
         return {
           success: false,
-          message: 'An error occurred during the search operation.',
+          message: `Notion client error: ${err}`,
         };
       }
     }
